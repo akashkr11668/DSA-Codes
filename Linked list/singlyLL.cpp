@@ -18,6 +18,20 @@ void Printnode(Node *head){
 
 }
 
+void search(Node *head, int key){
+    int pos;
+    Node *curr= head;
+    while(curr!=NULL){
+        if(curr->data==key){
+            cout<<pos+1;
+        }
+        else
+        pos++;
+        curr = curr->next;
+    }
+
+}
+
 int main(){
 Node *head= new Node(10);
 head -> next= new Node(50);
@@ -25,6 +39,7 @@ head-> next->next = new Node(60);
 head-> next->next->next = new Node(75);
 
 Printnode(head);
+search(head,10);
 
 return 0;
 }
