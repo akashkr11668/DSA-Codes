@@ -12,6 +12,12 @@ struct Node{
     }
 
 };
+void PrintNode(Node *head){
+    Node *curr= head;
+    while(curr!=NULL)
+    cout<<curr->data<<" ";
+    curr=curr->next;
+}
 
 int main(){
 Node *head =new Node(10);
@@ -24,6 +30,8 @@ temp->prev =head;
 temp->next =temp2;
 temp2->prev =temp;
 temp2->next=temp3;
+
+PrintNode(head);
 
 return 0;
 }
