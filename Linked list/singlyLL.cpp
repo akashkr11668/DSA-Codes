@@ -15,7 +15,7 @@ void Printnode(Node *head){
     cout <<head->data<<" ";
     head= head->next;
     }
-
+cout<<endl;
 }
 
 void search(Node *head, int key){
@@ -23,7 +23,7 @@ void search(Node *head, int key){
     Node *curr= head;
     while(curr!=NULL){
         if(curr->data==key){
-            cout<<pos+1;
+            cout<<pos+1<<endl;
         }
         else
         pos++;
